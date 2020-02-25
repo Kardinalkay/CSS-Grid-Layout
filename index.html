@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+<html>
+	
+	<head>
+		
+		<title>CSS GRID</title>
+
+		<style>
+
+			.container {
+				display: grid;
+				grid-template-columns: 100px auto 100px;
+				grid-template-rows: 100px 100px 100px;
+
+				width: 50%;
+				margin: 100px auto;
+				text-align: center;
+			}
+
+			.container > * {
+				background: darkslategrey;
+				padding: 30px 0;
+			}
+
+			.container > * {
+				color: black;
+			}
+
+			.container > *:nth-child(2n) {
+				background: khaki;
+			}
+
+
+			.container > *:nth-child(3n) {
+				background: sienna;
+			}
+			
+		</style>
+
+	</head>
+
+	<body>
+
+		<div class="container">
+			
+			<div>1</div>
+
+			<div>2</div>
+
+			<div>3</div>
+
+			<div>4</div>
+
+			<div>5</div>
+
+			<div>6</div>
+
+		</div>
+	 	
+
+	</body>
+	
+
+</html>
