@@ -12,6 +12,11 @@
 				display: grid;
 				grid-template-columns: repeat(12, 1fr);
 				grid-template-rows: 40px 200px 40px;
+				grid-template-areas: 
+					"m m h h h h h h h h h h"
+					"m m c c c c c c c c c c"
+					"m m f f f f f f f f f f";
+
 				grid-gap: 3px;
 
 				margin: 199px auto;
@@ -23,25 +28,27 @@
 			}
 
 			.header {
-				grid-column: 3 / -1;
+				grid-area: h;
+				/grid-column: 3 / -1;
 				background: linen;
 			}
 
 			.menu {
-				grid-column: 1 / span 2;
-				grid-row: 1 / span 3;
-				/height: 300px;
+				grid-area: m;
+				/grid-column: 1 / span 2;
+				/grid-row: 1 / span 3;
 				background: plum;
 			}
 
 			.content {
+				grid-area: c;
+				/grid-column: 3/ -1;
 				background: orchid;
-				grid-column: 3/ -1;
-				/height: 300px;
 			}
 
 			.footer {
-				grid-column: 3 / -1;
+				grid-area: f;
+				/grid-column: 3 / -1;
 				background: tan;
 			}
 			
